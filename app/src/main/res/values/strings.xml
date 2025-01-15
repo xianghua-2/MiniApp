@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CZJ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_left_button">随礼</string>
+    <string name="nav_right_button">收礼</string>
+    <string name="toolbar_mainpage">主页</string>
+    <string name="toolbar_give_money">随礼</string>
+    <string name="toolbar_earn_money">收礼</string>
+    <string name="menu_item_about">关于</string>
+    <string name="dialog_year">年    : </string>
+    <string name="dialog_month">月    : </string>
+    <string name="dialog_day">日    : </string>
+    <string name="dialog_name">姓名:</string>
+    <string name="dialog_reason">原因:</string>
+    <string name="dialog_amount">金额:</string>
+    <string name="dialog_give">随礼</string>
+    <string name="dialog_earn">收礼</string>
+    <string name="dialog_submit">提交</string>
+    <string name="dialog_not_int_warning">输入的年/月/日/金额不全为整数</string>
+    <string name="dialog_input_innormal">输入的年/月/日/金额不符合要求</string>
+    <string name="recyclerview_menu_title">菜单</string>
+    <string name="recyclerview_menu_delete">删除</string>
+</resources>

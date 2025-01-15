@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200px">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/item_gray"
+        >
+
+        <TextView
+            android:id="@+id/RecyViewParentImg"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:text="→"
+            android:textSize="100px"
+            android:gravity="center"
+            android:layout_marginLeft="50px"
+            />
+
+        <TextView
+            android:id="@+id/RecyViewParentYear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/RecyViewParentImg"
+            android:layout_marginLeft="30px"
+            android:text="TextView"
+            style="@style/RecyclerItemMainText"
+
+            />
+        <TextView
+            android:id="@+id/RecyViewParentNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50px"
+            android:text=""
+            android:textSize="50px"
+            android:gravity="center"
+        ></TextView>
+
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

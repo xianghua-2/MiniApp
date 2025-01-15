@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200px">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/RecyViewChildDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="30px"
+            android:textSize="70px"
+            ></TextView>
+        <TextView
+            android:id="@+id/RecyViewChildMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RecyViewChildDay"
+            android:layout_alignLeft="@id/RecyViewChildDay"
+            android:text="5月"
+            android:textSize="40px"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="0px"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/RecyViewChildName"
+            android:layout_toRightOf="@id/RecyViewChildDay"
+            android:text="蔡泽炬"
+            android:layout_marginLeft="60px"
+            style="@style/RecyclerItemMainText"></TextView>
+
+        <TextView
+            android:id="@+id/RecyViewChildMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/RecyclerItemMainText"
+            android:layout_toLeftOf="@id/RecyViewChildRigImg"
+            android:text="￥200"
+            android:layout_marginRight="50px"
+            ></TextView>
+        <TextView
+            android:id="@+id/RecyViewChildRigImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text=">"
+            android:textSize="100px"
+            android:gravity="center"
+            android:layout_marginRight="50px"
+            >
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

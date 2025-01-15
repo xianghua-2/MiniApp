@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500px"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        >
+
+        <TextView
+            android:id="@+id/DlgYearText"
+            style="@style/DialogText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_year" />
+
+        <EditText
+            android:id="@+id/DlgYearInput"
+            style="@style/DialogInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/DlgYearText"
+            android:inputType="textPersonName"
+            />
+
+        <TextView
+            android:id="@+id/DlgMonthText"
+            style="@style/DialogText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DlgYearText"
+            android:text="@string/dialog_month" />
+
+        <EditText
+            android:id="@+id/DlgMonthInput"
+            style="@style/DialogInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DlgYearInput"
+            android:layout_toRightOf="@id/DlgMonthText"
+            android:inputType="textPersonName"
+            />
+
+        <TextView
+            android:id="@+id/DlgDayText"
+            style="@style/DialogText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DlgMonthText"
+            android:text="@string/dialog_day" />
+
+        <EditText
+            android:id="@+id/DlgDayInput"
+            style="@style/DialogInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DlgMonthInput"
+            android:layout_toRightOf="@id/DlgDayText"
+            android:inputType="textPersonName"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DlgNameText"
+            style="@style/DialogText"
+            android:text="@string/dialog_name"
+            android:layout_below="@id/DlgDayText"
+            ></TextView>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DlgNameInput"
+            style="@style/DialogInput"
+            android:layout_below="@id/DlgDayInput"
+            android:layout_toRightOf="@id/DlgNameText"
+            ></EditText>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/DlgRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/DlgRadioButtonGiving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_give" />
+
+            <RadioButton
+                android:id="@+id/DlgRadioButtonEarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_earn" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/DlgReasonText"
+            style="@style/DialogText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_below="@id/DlgRadioGroup"
+            android:text="@string/dialog_reason" />
+
+        <EditText
+            android:id="@+id/DlgReasonInput"
+            style="@style/DialogInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DlgRadioGroup"
+            android:layout_toRightOf="@id/DlgReasonText"
+            android:inputType="textPersonName"
+            android:text="" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DlgAmountText"
+            style="@style/DialogText"
+            android:layout_marginLeft="50px"
+            android:layout_below="@id/DlgReasonText"
+            android:text="@string/dialog_amount"></TextView>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DlgAmountInput"
+            style="@style/DialogInput"
+            android:layout_below="@id/DlgReasonInput"
+            android:layout_toRightOf="@id/DlgAmountText"
+            ></EditText>
+
+
+        <Button
+            android:id="@+id/DlgSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_submit"
+            android:textColor="@color/white"
+            android:layout_below="@id/DlgAmountText"
+            android:layout_marginLeft="130px"
+            android:layout_marginTop="30px"
+            android:background="@color/my_green"
+
+            />
+    </RelativeLayout>
+</LinearLayout>

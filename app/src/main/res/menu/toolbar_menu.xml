@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--orderInCategory菜单项的优先级，也就是顺序，只能设置正整数，数值越大菜单项越靠前-->
+    <item       android:id="@+id/item1"
+        android:orderInCategory="100"
+        android:title="@string/menu_item_about"
+        ></item>
+</menu>
